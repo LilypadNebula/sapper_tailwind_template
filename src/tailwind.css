@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.selected {
+  @apply border-b-4 rounded border-orange-600;
+}
