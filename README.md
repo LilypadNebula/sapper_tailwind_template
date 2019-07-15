@@ -1,12 +1,9 @@
 # sapper-template
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, with branches for Rollup and webpack. To clone it and get started:
+The default [Sapper](https://github.com/sveltejs/sapper) template, set up with TailwindCSS through Rollup plugins. To clone it and get started:
 
 ```bash
-# for Rollup
-npx degit "sveltejs/sapper-template#rollup" my-app
-# for webpack
-npx degit "sveltejs/sapper-template#webpack" my-app
+npx degit LilypadNebula/sapper_tailwind_template my-app
 cd my-app
 npm install # or yarn!
 npm run dev
@@ -26,6 +23,9 @@ Sapper expects to find two directories in the root of your project —  `src` an
 
 The [src](src) directory contains the entry points for your app — `client.js`, `server.js` and (optionally) a `service-worker.js` — along with a `template.html` file and a `routes` directory.
 
+### src/tailwind.css
+
+Where tailwind's initial styles are set up, along with any @apply rules. Imported in server.js to be processed with postcss.
 
 #### src/routes
 
